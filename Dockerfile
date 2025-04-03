@@ -16,5 +16,7 @@ COPY . .
 # Exponha a porta na qual a aplicação irá rodar
 EXPOSE 5000
 
+COPY ./client /app/client
+
 # Defina o comando para executar a aplicação
 CMD ["flask", "run", "--host=0.0.0.0"]
